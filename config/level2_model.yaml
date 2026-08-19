@@ -1,0 +1,21 @@
+analysis_year: 2024
+primary_disease: COVID
+feature_mode: case_only
+outcome_type: rate
+random_seed: 42
+split:
+  method: chronological
+  development_fraction: 0.80
+  held_out_fraction: 0.20
+hyperparameter_search:
+  sequence_length: [4, 6]
+  hidden_dimension: [64, 128]
+  recurrent_layers: [1]
+  dropout: [0.0, 0.2]
+  capped_self_connection: [0.1, 0.2, 0.4]
+  alpha: [0.30, 0.50]
+interpretation:
+  - Contribution scores are model-based sensitivity measures.
+  - They are not causal transmission effects.
+  - Level 2 refines rather than replaces Level 1 selection.
+

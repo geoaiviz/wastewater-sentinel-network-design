@@ -1,0 +1,17 @@
+analysis_year: 2024
+months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+selection_fraction: 0.25
+total_sites: 20
+singleton_top_fraction: 0.30
+singleton_distance_threshold_km: 100
+singleton_bottom_fraction: 0.20
+singleton_reserve_count: 6
+singleton_reserve_fraction: 0.0
+isolation_bonus_km: 100
+risk_weight: 0.5
+coverage_weight: 0.5
+notes:
+  - This is the main fixed-capacity Colorado configuration.
+  - Parameter-sensitivity runs are separate from this configuration.
+  - June and December are illustrative maps; evaluation uses all 12 months.
+
